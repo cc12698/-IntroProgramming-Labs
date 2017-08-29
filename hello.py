@@ -3,4 +3,5 @@
 #Date: 8/29/2017
 def main():
     print("Hello, instructor!")
+    print("good-bye!")
 main()
