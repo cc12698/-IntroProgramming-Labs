@@ -1,0 +1,6 @@
+print("186,000 mps")
+print("34 million miles")
+mps=(186,000)
+miles=(34000000)
+Answer=(34000000/186000)
+print(Answer)
