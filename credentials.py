@@ -13,7 +13,7 @@ def userName():
     print(fullName)
 
     
-
+    userName.Email = fullName
 
 userName()
 
@@ -49,4 +49,5 @@ def passWord():
 
 passWord()
 
+print("Your new email address is", userName.Email+"@marist.edu")
 
