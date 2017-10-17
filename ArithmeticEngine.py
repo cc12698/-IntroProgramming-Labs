@@ -12,8 +12,11 @@ def showOutro():
 
 def num():
     global num1, num2
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
+    try:
+        num1 = int(input("Enter the first number: "))
+        num2 = int(input("Enter the second number: "))
+    except:
+        num()
     
 
 def doLoop():
@@ -33,11 +36,12 @@ def doLoop():
          print("The result is " + str(result) + ".\n")
      elif cmd.lower() == "div":
          num()
-         if num2 == 0:
-             print("unable to divide by zero!")
-         else:
-             result = num1 // num2
-             print("The result is " + str(result) + ".\n")
+         try:
+             frac = a / b 
+         except:
+             print("Unable to divide by zero!")
+             frac = 0
+         
      elif cmd.lower() == "quit":
          break
      else:
