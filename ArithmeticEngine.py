@@ -14,19 +14,19 @@ def doLoop():
      cmd = input("What computation do you want to perform? ")
      num1 = int(input("Enter the first number: "))
      num2 = int(input("Enter the second number: "))
-     if cmd == "add":
+     if cmd.lower == "add":
          result = num1 + num2
          print("The result is " + str(result) + ".\n")
-     elif cmd == "sub":
+     elif cmd.lower == "sub":
          result = num1 - num2
          print("The result is " + str(result) + ".\n")
-     elif cmd == "mult":
+     elif cmd.lower == "mult":
          result = num1 * num2
          print("The result is " + str(result) + ".\n")
-     elif cmd == "div":
+     elif cmd.lower == "div":
          result = num1 // num2
          print("The result is " + str(result) + ".\n")
-     elif cmd == "quit":
+     elif cmd.lower == "quit":
          break
  
 def main():
