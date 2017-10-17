@@ -35,8 +35,9 @@ def doLoop():
          num()
          if num2 == 0:
              print("unable to divide by zero!")
-         result = num1 // num2
-         print("The result is " + str(result) + ".\n")
+         else:
+             result = num1 // num2
+             print("The result is " + str(result) + ".\n")
      elif cmd.lower() == "quit":
          break
      else:
