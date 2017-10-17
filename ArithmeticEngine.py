@@ -37,10 +37,11 @@ def doLoop():
      elif cmd.lower() == "div":
          num()
          try:
-             frac = a / b 
+             result = num1 // num2
+             print("The result is " + str(result) + ".\n")
          except:
              print("Unable to divide by zero!")
-             frac = 0
+             continue
          
      elif cmd.lower() == "quit":
          break
