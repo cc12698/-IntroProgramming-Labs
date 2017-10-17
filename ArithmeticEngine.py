@@ -12,22 +12,32 @@ def showOutro():
 def doLoop():
  while True:
      cmd = input("What computation do you want to perform? ")
-     num1 = int(input("Enter the first number: "))
-     num2 = int(input("Enter the second number: "))
-     if cmd.lower == "add":
+     if cmd.lower() == "add":
+         num1 = int(input("Enter the first number: "))
+         num2 = int(input("Enter the second number: "))
          result = num1 + num2
          print("The result is " + str(result) + ".\n")
-     elif cmd.lower == "sub":
+     elif cmd.lower() == "sub":
+         num1 = int(input("Enter the first number: "))
+         num2 = int(input("Enter the second number: "))
          result = num1 - num2
          print("The result is " + str(result) + ".\n")
-     elif cmd.lower == "mult":
+     elif cmd.lower() == "mult":
+         num1 = int(input("Enter the first number: "))
+         num2 = int(input("Enter the second number: "))
          result = num1 * num2
          print("The result is " + str(result) + ".\n")
-     elif cmd.lower == "div":
+     elif cmd.lower() == "div":
+         num1 = int(input("Enter the first number: "))
+         num2 = int(input("Enter the second number: "))
          result = num1 // num2
          print("The result is " + str(result) + ".\n")
-     elif cmd.lower == "quit":
+     elif cmd.lower() == "quit":
          break
+     else:
+         print("I'm sorry that is not a valid response")
+
+     
  
 def main():
  showIntro()
