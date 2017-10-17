@@ -9,27 +9,32 @@ def showIntro():
 def showOutro():
  print("\nThank you for using the Arithmetic Engine…")
  print("\nPlease come back again soon!")
+
+def num():
+    global num1, num2
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    
+
 def doLoop():
  while True:
      cmd = input("What computation do you want to perform? ")
      if cmd.lower() == "add":
-         num1 = int(input("Enter the first number: "))
-         num2 = int(input("Enter the second number: "))
+         num()
          result = num1 + num2
          print("The result is " + str(result) + ".\n")
      elif cmd.lower() == "sub":
-         num1 = int(input("Enter the first number: "))
-         num2 = int(input("Enter the second number: "))
+         num()
          result = num1 - num2
          print("The result is " + str(result) + ".\n")
      elif cmd.lower() == "mult":
-         num1 = int(input("Enter the first number: "))
-         num2 = int(input("Enter the second number: "))
+         num()
          result = num1 * num2
          print("The result is " + str(result) + ".\n")
      elif cmd.lower() == "div":
-         num1 = int(input("Enter the first number: "))
-         num2 = int(input("Enter the second number: "))
+         num()
+         if num2 == 0:
+             print("unable to divide by zero!")
          result = num1 // num2
          print("The result is " + str(result) + ".\n")
      elif cmd.lower() == "quit":
