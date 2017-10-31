@@ -27,10 +27,14 @@ responses = ["I'm mad at you",
                 
 
 
-def getInteraction(personality):
+def loop():
+    currEmotion = happiness
 
+    action = getInteraction() 
+    currEmotion = lookupEmotion(currEmotion, action)
+    showEmotion(currEmotion)
+    
     response = input("what would you like to do? ").lower()
-
     if response == "reward":
         print(responses[3:4])
     if response == "punish":
@@ -45,4 +49,4 @@ def getInteraction(personality):
         
     
 
-getInteraction(personality)
+loop()
